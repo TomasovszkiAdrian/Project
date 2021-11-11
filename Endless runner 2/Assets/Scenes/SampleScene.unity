@@ -6879,6 +6879,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cda44196b8f37f418d825abb0070cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterDB: {fileID: 0}
+  artworkSprite: {fileID: 0}
   playerSpeed: 12
 --- !u!212 &1988432593
 SpriteRenderer:
@@ -7101,7 +7103,7 @@ Transform:
   m_GameObject: {fileID: 2115639707}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.87, y: 0, z: 0}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 1988432589}
   - {fileID: 893886056}
@@ -7146,7 +7148,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 31.5, y: 31.5}
+    oldSize: {x: 9, y: 9}
     newSize: {x: 31.5, y: 31.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7167,6 +7169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9cda44196b8f37f418d825abb0070cac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterDB: {fileID: 11400000, guid: e66d5c7508dfc3846b13a3c7ad223f10, type: 2}
+  artworkSprite: {fileID: 2115639712}
   playerSpeed: 12
 --- !u!212 &2115639712
 SpriteRenderer:
