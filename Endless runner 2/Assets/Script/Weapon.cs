@@ -22,9 +22,7 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         Instantiate(bulletPrefarb, firePoint.position, firePoint.rotation);
-        
-        
-        //Shooting logic
+       
     }
 }
 

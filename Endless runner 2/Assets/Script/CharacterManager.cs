@@ -55,7 +55,7 @@ public class CharacterManager : MonoBehaviour
     {
         Character character = characterDB.GetCharacter(selectedOption);
         artworkSprite.sprite = character.characterSprite;
-        nameText.text = character.characterName;
+       // nameText.text = character.characterName;
     }
     private void Load()
     {
@@ -68,5 +68,10 @@ public class CharacterManager : MonoBehaviour
     public void ChangeScene(int sceneID)
     {
         SceneManager.LoadScene(sceneID);
+    }
+    public void ExitButton()
+    {
+        Application.Quit();
+        Debug.Log("Game closed");
     }
 }

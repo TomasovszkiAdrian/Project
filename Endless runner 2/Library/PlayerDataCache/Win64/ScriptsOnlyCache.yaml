@@ -4,6 +4,8 @@ ScriptsOnlyBuild:
     - BackgroundMusic
     - Bullet
     - CameraMovement
+    - CharacterDatabase
+    - CharacterManager
     - GameOver
     - LoopingBackground
     - MainMenu
@@ -50,7 +52,62 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    lootlocker.lootlockersdk.runtime.dll:
+    - LootLocker.LootLockerConfig
   sceneClasses:
+    Assets/Scenes/Character Selection.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1516}
+    - Class: 114
+      Script: {instanceID: 2220}
+    - Class: 114
+      Script: {instanceID: 2650}
+    - Class: 114
+      Script: {instanceID: 2796}
+    - Class: 114
+      Script: {instanceID: 2820}
+    - Class: 114
+      Script: {instanceID: 3040}
+    - Class: 114
+      Script: {instanceID: 3284}
+    - Class: 114
+      Script: {instanceID: 3398}
+    - Class: 114
+      Script: {instanceID: 3966}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 212
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -79,27 +136,29 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 1702}
+      Script: {instanceID: 1708}
     - Class: 114
-      Script: {instanceID: 1792}
+      Script: {instanceID: 1800}
     - Class: 114
-      Script: {instanceID: 1932}
+      Script: {instanceID: 1942}
     - Class: 114
-      Script: {instanceID: 2208}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 3398}
+    - Class: 114
+      Script: {instanceID: 4380}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,41 +209,43 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1510}
+      Script: {instanceID: 1516}
     - Class: 114
-      Script: {instanceID: 1556}
+      Script: {instanceID: 1562}
     - Class: 114
-      Script: {instanceID: 1670}
+      Script: {instanceID: 1676}
     - Class: 114
-      Script: {instanceID: 2046}
+      Script: {instanceID: 1724}
     - Class: 114
-      Script: {instanceID: 2208}
+      Script: {instanceID: 2056}
     - Class: 114
-      Script: {instanceID: 2284}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2576}
+      Script: {instanceID: 2296}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2596}
     - Class: 114
-      Script: {instanceID: 2628}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2688}
+      Script: {instanceID: 2650}
     - Class: 114
-      Script: {instanceID: 2776}
+      Script: {instanceID: 2712}
     - Class: 114
-      Script: {instanceID: 2792}
+      Script: {instanceID: 2796}
     - Class: 114
-      Script: {instanceID: 3008}
+      Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 2820}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3040}
     - Class: 114
-      Script: {instanceID: 4332}
+      Script: {instanceID: 3284}
     - Class: 114
-      Script: {instanceID: 4606}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 17652}
+      Script: {instanceID: 4380}
+    - Class: 114
+      Script: {instanceID: 4658}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -294,6 +355,12 @@ ScriptsOnlyBuild:
     className: HorizontalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 328b8d217db7ce067e4c0d145cbf7d64
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundOFON
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -372,7 +439,7 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
-      Hash: 77b5b392291ad3027e7177d702923e9e
+      Hash: a05ee90637e3bd872edcb72145c803d3
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -402,6 +469,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: acee1869b48af86fd993d365ea529eed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterDatabase
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -412,6 +485,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: ea9f30ed8143158d0b213ef8fdf34486
+    assemblyName: lootlocker.lootlockersdk.runtime.dll
+    namespaceName: LootLocker
+    className: LootLockerConfig
   - hash:
       serializedVersion: 2
       Hash: fe64a45214940b510a0ec79c96d43498
@@ -588,6 +667,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: 08de750269639db980be0ddc12c62b67
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterManager
+  - hash:
+      serializedVersion: 2
       Hash: bd3cf68c8964d3c66d1c43f4f98508c9
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -714,6 +799,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: lootlocker.lootlockersdk.runtime.dll
+    namespaceName: LootLocker
+    className: LootLockerServerManager
+  - hash:
+      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -796,14 +887,9 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: 328b8d217db7ce067e4c0d145cbf7d64
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SoundOFON
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/Character Selection.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Egyetem/Endless runner 2/Endless runner 2.exe
+  playerPath: C:/Egyetem/Project/Endless runner 2/Endless runner 2.exe
