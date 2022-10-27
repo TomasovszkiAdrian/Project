@@ -34,4 +34,16 @@ int main() {
 	waitKey();
 	return 0;
 }
-  
+ 
+	
+	
+int main(){
+	Mat img = imread(".jpg", IMREAD_GRAYSCALE);
+	assert(!img.empty());
+	
+	Mat dest;
+	threshold(img, dest, 30, 255, THRESH_BINARY);
+	
+	imwrite(,dest);
+	return 0;
+	}
